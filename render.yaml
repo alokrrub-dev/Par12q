@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: telegram-gifts-tracker
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    healthCheckPath: /ready
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: SESSION_STRING
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: DATABASE_URL
+        sync: false

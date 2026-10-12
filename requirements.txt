@@ -1,0 +1,1 @@
+-r telegram_gifts_bot/requirements.txt

@@ -1,0 +1,7 @@
+aiogram==3.26.0
+Kurigram==2.2.26
+SQLAlchemy==2.0.44
+asyncpg==0.30.0
+aiohttp>=3.9.0,<3.14
+python-dotenv==1.1.1
+TgCrypto==1.2.5
